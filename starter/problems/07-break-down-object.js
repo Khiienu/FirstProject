@@ -16,7 +16,11 @@ breakDownObj(object2); // => [ 'location', 'borough', 'NY', 'Brooklyn' ]
 
 function breakDownObj(obj) {
   // your code here
+    let key = Object.keys(obj)
+    let value = Object.values(obj)
+    return [...key,...value];    
 }
-
+let object1 = {name: 'Rupert', age: 5, speak: 'Meow'};
+console.log(breakDownObj(object1)); // => [ 'name', 'age', 'speak', 'Rupert', 5, 'Meow' ]
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = breakDownObj;

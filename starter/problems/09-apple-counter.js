@@ -30,7 +30,18 @@ appleCounter(obj3); // => 3
 
 function appleCounter(appleObj) {
   // your code here
+  let a = 'apple';
+ 
+  let test = Object.keys(appleObj);
+    console.log(test);
+   
 }
-
+let obj3 = {
+  crabApple: "yum!",
+  honeyApple: "super yum",
+  banana: "yay",
+  bigapple: "NYC"
+};
+appleCounter(obj3); // => 3
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = appleCounter;
